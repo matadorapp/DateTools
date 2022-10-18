@@ -8,6 +8,10 @@ let package = Package(
         .library(name: "DateToolsSwift", targets: ["DateToolsSwift"])
     ],
     targets: [
-        .target(name: "DateToolsSwift", path: "DateToolsSwift/DateTools")
+        .target(name: "DateToolsSwift",
+                path: "DateToolsSwift/DateTools",
+                resources: [
+                    .process("DateTools.bundle")
+                ])
     ]
 )
